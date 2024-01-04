@@ -5,6 +5,8 @@ import { Button } from "../Button/index";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
+import menu from "../../assets/imgs/icones/bars-solid.svg";
+
 export function Header() {
   const [isActive, setActive] = useState(false);
 
@@ -30,7 +32,7 @@ export function Header() {
         </Link>
         <button className={styles.hamburguerButton} onClick={handleToggleMenu}>
           <img
-            src="https://img.icons8.com/ios-glyphs/50/FFFFFF/menu-rounded.png"
+            src={menu}
             alt="Menu Hamburguer"
           />
         </button>
